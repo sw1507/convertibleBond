@@ -1,23 +1,14 @@
 from math import nan
-from WindPy import w
+
 import numpy as np
-from numpy.core.numeric import NaN, _tensordot_dispatcher
-w.start()
+
 import Chart
 import pandas as pd
-import QuantLib as ql
 import datetime
 import numpy as np
-import QuantLib as ql
 import time
 import random
-from ChinaBondCorporateBondYieldData import ChinaBondCorporateBondYieldData
-from Bond import Bond
-from MC import MonteCarlo
 import numpy.random as npr
-import matplotlib.pyplot as plt
-from Volatility import HistoricalVolatility
-from ChinaBondTreasuryYieldData import ChinaBondTreasuryYieldData
 
 #测试
 """
@@ -235,9 +226,23 @@ def getDaysWithHigherPriceAboveLimit(priceList, duration):
             numberOfHighPriceDate += 1
     return numberOfHighPriceDate
 
-def checkConsecutives(resultList, daysLimit):
+
+
+def deleteItemWithNoneType(originalData):
+    keysThatNeedToBeDropped = []
+    for key in originalData.keys():
+        closingPrice = originalData[key]['收盘价']
+        for price in closingPrice:
+            if(price == None):
+                keysThatNeedToBeDropped.append(key)
+                break
+    for keyNeedToBeDropped in keysThatNeedToBeDropped:
+        originalData.pop(keyNeedToBeDropped)
+    return originalData
+
+def checkConsecutives(resultList, daysLimit, daysList, code):
     if(len(resultList) < daysLimit):
-        return False
+        return {"code": code, "result": False, "startDate": "", "endDate": ""}
     left = 0
     right = 0
     while(left < len(resultList) and right < len(resultList)):
@@ -245,25 +250,51 @@ def checkConsecutives(resultList, daysLimit):
             right += 1
         else:
             numberOfConsecutives = right - left
-            # print(str(left) + " " + str(right) + " " + str(numberOfConsecutives))
             if(numberOfConsecutives >= daysLimit):
-                return True
+                return {"code": code, "result" : True, "startDate": daysList[left], "endDate": daysList[right - 1]}
             else:
                 left = right + 1
                 right = left
+        numberOfConsecutives = right - left
+        if(numberOfConsecutives >= daysLimit):
+            return {"code": code, "result" : True, "startDate": daysList[left], "endDate": daysList[right - 1]}
+                
     if(right - left >= daysLimit):
-        return True
+        return {"code": code, "result" : True, "startDate": daysList[left], "endDate": daysList[right - 1]}
     else:
-        return False
+        return {"code": code, "result": False, "startDate": "", "endDate": ""}
+
+
+testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+originalData = testInfo.item()
+data = deleteItemWithNoneType(originalData)
+numberOfTriggerRedeem = 0
+totalNumberOfCB = len(data)
+
+for key, value in data.items():
+    print(str(key))
+    date = value["日期"]
+    closingPrice = value["收盘价"]
+    convertPrice = value["转股价"]
+    percentage = value["回售触发比例"]/100
+    #创建一个resultList，存储boolean type，每个boolean代表每一天的收盘价是否低于了转股价格乘以比例（回售条款约定的）
+    resultList = []
+
+    for index in range(0, len(closingPrice)):
+        if(closingPrice[index] < convertPrice[index] * percentage):
+            resultList.append(True)
+        else:
+            resultList.append(False)
+    value["resultList"] = resultList
+print("resultList执行结束")
 
 
 
-# testResultList = [True, True, True, True, True, True, True, True, True, True]
-# testDuration = 10
-# result = checkConsecutives(testResultList, testDuration)
-# print(result)
 
-testDict = {1:"Y", 2:"N", 3:"ss"}
-testDict.pop(3)
-print(testDict)
-   
+oneStockData = originalData["110037.SH"]
+dates = oneStockData["日期"]
+closingPrice = oneStockData["收盘价"]
+convertPrice = oneStockData["转股价"]
+dataMap = {"日期" : dates, "收盘价":closingPrice, "转股价":convertPrice, "result":oneStockData["resultList"]}
+df_test = pd.DataFrame(dataMap)
+df_test.to_csv(r'C:/Users/Su Wang/Desktop/首创/test128029.csv')

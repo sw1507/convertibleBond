@@ -106,7 +106,7 @@ def checkIfTriggerSellback(resultList, daysLimit, daysList, code, duration):
                 previous += 1
             if(previous >= daysLimit):
                 # print(code + " 开始日：" + str(daysList[slidingWindowStart]) + " 结束日：" + str(daysList[slidingWindowEnd]))
-                return {"code": code, "result" : True, "startDate" : daysList[slidingWindowStart], "endDate": daysList[slidingWindowEnd]}
+                return {"code": code, "result" : True, "startDate" : daysList[slidingWindowEnd - daysLimit + 1], "endDate": daysList[slidingWindowEnd]}
             else:
                 slidingWindowStart += 1
     return {"code": code, "result" : False, "startDate" : "", "endDate": ""}            
@@ -187,7 +187,7 @@ getAllDataReady()
 #testInfo = np.load('D:\个人专题\可转债\回售测试\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
 
 #at home
-testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\回售测试\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
 originalData = testInfo.item()
 data = deleteItemWithNoneType(originalData)
 numberOfTriggerRedeem = 0
@@ -196,7 +196,6 @@ totalNumberOfCB = len(data)
 
 
 for key, value in data.items():
-    print(str(key))
     date = value["日期"]
     closingPrice = value["收盘价"]
     convertPrice = value["转股价"]
@@ -210,7 +209,6 @@ for key, value in data.items():
         else:
             resultList.append(False)
     value["resultList"] = resultList
-print("resultList执行结束")
 
 #遍历所有可转债，查看其是否触发赎回条件，收集结果
 #创建一个空的字典，用来储存结果
@@ -232,7 +230,8 @@ for key, value in data.items():
     print("结果打印完毕：" + str(index) + " / " + str(totalNumberOfCB) + ": " + str(key))
     index += 1
 result_df = pd.DataFrame(resultDict)
-result_df.to_csv("D:/个人专题/可转债/回售测试/sellBackTestResult.csv")
+# result_df.to_csv("D:/个人专题/可转债/回售测试/sellBackTestResult.csv")
+result_df.to_csv(r"C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\sellBackTestResult-2.csv")
 
     # if(oneBondResult):
     #     numberOfTriggerRedeem += 1
