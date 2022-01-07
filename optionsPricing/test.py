@@ -264,15 +264,16 @@ def checkConsecutives(resultList, daysLimit, daysList, code):
     else:
         return {"code": code, "result": False, "startDate": "", "endDate": ""}
 
-
-testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+#at home
+#testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+#at office
+testInfo = np.load(r'D:\个人专题\Github\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
 originalData = testInfo.item()
 data = deleteItemWithNoneType(originalData)
 numberOfTriggerRedeem = 0
 totalNumberOfCB = len(data)
 
 for key, value in data.items():
-    print(str(key))
     date = value["日期"]
     closingPrice = value["收盘价"]
     convertPrice = value["转股价"]
@@ -286,15 +287,16 @@ for key, value in data.items():
         else:
             resultList.append(False)
     value["resultList"] = resultList
-print("resultList执行结束")
 
 
 
-
-oneStockData = originalData["110037.SH"]
+oneStockData = originalData["110874.SH"]
 dates = oneStockData["日期"]
 closingPrice = oneStockData["收盘价"]
 convertPrice = oneStockData["转股价"]
 dataMap = {"日期" : dates, "收盘价":closingPrice, "转股价":convertPrice, "result":oneStockData["resultList"]}
 df_test = pd.DataFrame(dataMap)
-df_test.to_csv(r'C:/Users/Su Wang/Desktop/首创/test128029.csv')
+#at home
+# df_test.to_csv(r'C:/Users/Su Wang/Desktop/首创/test128029.csv')
+#at office
+df_test.to_csv(r'D:/个人专题/test110874.csv')

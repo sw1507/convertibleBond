@@ -34,10 +34,19 @@ def countNumberOfCBThatHasHadXiaXiu(convertibleBondCode, convertPriceList):
 
 
 #main
-testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+# at homne
+# testInfo = np.load(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', allow_pickle = True)
+# at office
+testInfo = np.load(r'D:\个人专题\Github\convertibleBond\cbPricing\sellBackTest\cbConvertPriceAndStockClosingPriceInfo-sellBack-final.npy', 
+    allow_pickle = True)
+    
 originalData = testInfo.item()
 data = deleteItemWithNoneType(originalData)
-df = pd.read_csv(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\xiaXiuTest\xiaXiuToBeConfirm.csv')
+
+# at home
+# df = pd.read_csv(r'C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\xiaXiuTest\xiaXiuToBeConfirm.csv')
+# at office
+df = pd.read_csv(r'D:\个人专题\Github\convertibleBond\cbPricing\xiaXiuTest\xiaXiuToBeConfirm.csv')
 cbCodeList = df['code'].tolist()
 whetherHadXiaXiuResult = []
 
@@ -51,4 +60,8 @@ for cbCode in cbCodeList:
 
 resultDict = {"code": cbCodeList, "dateHadXiaXiu": whetherHadXiaXiuResult}    
 result_df = pd.DataFrame(resultDict)
-result_df.to_csv(r"C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\xiaXiuTest\xiaXiuResult.csv")
+
+#at home
+# result_df.to_csv(r"C:\Users\Su Wang\Desktop\首创\git\convertibleBond\cbPricing\xiaXiuTest\xiaXiuResult.csv")
+#at office
+result_df.to_csv(r"D:\个人专题\xiaXiuResult.csv")

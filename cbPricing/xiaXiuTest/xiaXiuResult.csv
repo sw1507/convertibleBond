@@ -1,113 +1,40 @@
 ,code,dateHadXiaXiu
-0,100016.SH,"[datetime.datetime(2007, 6, 11, 0, 0)]"
-1,100096.SH,"[datetime.datetime(2006, 4, 4, 0, 0)]"
-2,100117.SH,[]
-3,100177.SH,"[datetime.datetime(2004, 4, 16, 0, 0), datetime.datetime(2005, 4, 29, 0, 0)]"
-4,100196.SH,"[datetime.datetime(2004, 6, 24, 0, 0)]"
-5,100220.SH,"[datetime.datetime(2004, 6, 21, 0, 0)]"
-6,100236.SH,"[datetime.datetime(2005, 6, 22, 0, 0), datetime.datetime(2006, 6, 6, 0, 0), datetime.datetime(2007, 6, 19, 0, 0), datetime.datetime(2008, 6, 20, 0, 0)]"
-7,100567.SH,"[datetime.datetime(2004, 4, 19, 0, 0), datetime.datetime(2004, 7, 26, 0, 0), datetime.datetime(2004, 12, 8, 0, 0), datetime.datetime(2005, 1, 6, 0, 0), datetime.datetime(2005, 4, 4, 0, 0), datetime.datetime(2005, 5, 25, 0, 0), datetime.datetime(2005, 7, 27, 0, 0), datetime.datetime(2006, 4, 20, 0, 0)]"
-8,100726.SH,"[datetime.datetime(2005, 6, 20, 0, 0), datetime.datetime(2005, 12, 6, 0, 0), datetime.datetime(2006, 6, 16, 0, 0)]"
-9,100795.SH,"[datetime.datetime(2004, 4, 8, 0, 0)]"
-10,110002.SH,[]
-11,110004.SH,"[datetime.datetime(2010, 7, 21, 0, 0)]"
-12,110005.SH,[]
-13,110006.SH,[]
-14,110007.SH,"[datetime.datetime(2012, 10, 31, 0, 0), datetime.datetime(2014, 7, 16, 0, 0)]"
-15,110008.SH,"[datetime.datetime(2010, 8, 12, 0, 0)]"
-16,110010.SH,"[datetime.datetime(2005, 6, 3, 0, 0), datetime.datetime(2005, 11, 14, 0, 0), datetime.datetime(2006, 7, 11, 0, 0), datetime.datetime(2007, 6, 12, 0, 0), datetime.datetime(2008, 6, 12, 0, 0), datetime.datetime(2009, 7, 14, 0, 0)]"
-17,110011.SH,[]
-18,110012.SH,"[datetime.datetime(2014, 5, 27, 0, 0)]"
-19,110013.SH,[]
-20,110016.SH,[]
-21,110017.SH,[]
-22,110018.SH,"[datetime.datetime(2013, 1, 11, 0, 0), datetime.datetime(2013, 5, 23, 0, 0), datetime.datetime(2014, 6, 13, 0, 0)]"
-23,110019.SH,"[datetime.datetime(2013, 5, 27, 0, 0), datetime.datetime(2014, 7, 18, 0, 0)]"
-24,110020.SH,[]
-25,110021.SH,[]
-26,110022.SH,[]
-27,110024.SH,[]
-28,110025.SH,[]
-29,110026.SH,[]
-30,110027.SH,[]
-31,110028.SH,[]
-32,110029.SH,[]
-33,110035.SH,[]
-34,110036.SH,"[datetime.datetime(2009, 7, 3, 0, 0)]"
-35,110037.SH,"[datetime.datetime(2004, 12, 9, 0, 0), datetime.datetime(2005, 6, 6, 0, 0), datetime.datetime(2005, 7, 4, 0, 0), datetime.datetime(2005, 9, 30, 0, 0), datetime.datetime(2006, 6, 29, 0, 0), datetime.datetime(2007, 5, 10, 0, 0)]"
-36,110078.SH,"[datetime.datetime(2008, 6, 18, 0, 0), datetime.datetime(2009, 6, 4, 0, 0), datetime.datetime(2010, 7, 19, 0, 0), datetime.datetime(2011, 6, 16, 0, 0)]"
-37,110219.SH,"[datetime.datetime(2005, 6, 13, 0, 0), datetime.datetime(2005, 6, 15, 0, 0), datetime.datetime(2006, 3, 31, 0, 0)]"
-38,110227.SH,"[datetime.datetime(2008, 5, 13, 0, 0), datetime.datetime(2008, 10, 21, 0, 0), datetime.datetime(2009, 4, 13, 0, 0)]"
-39,110232.SH,"[datetime.datetime(2007, 7, 11, 0, 0), datetime.datetime(2008, 8, 8, 0, 0), datetime.datetime(2008, 10, 15, 0, 0)]"
-40,110325.SH,[]
-41,110368.SH,"[datetime.datetime(2008, 10, 17, 0, 0)]"
-42,110398.SH,[]
-43,110418.SH,[]
-44,110423.SH,[]
-45,110488.SH,[]
-46,110567.SH,[]
-47,110598.SH,"[datetime.datetime(2008, 9, 26, 0, 0), datetime.datetime(2009, 6, 12, 0, 0)]"
-48,110874.SH,"[datetime.datetime(2005, 7, 28, 0, 0), datetime.datetime(2005, 8, 1, 0, 0), datetime.datetime(2006, 1, 9, 0, 0), datetime.datetime(2006, 5, 24, 0, 0), datetime.datetime(2006, 7, 31, 0, 0), datetime.datetime(2007, 7, 2, 0, 0)]"
-49,110971.SH,"[datetime.datetime(2008, 7, 14, 0, 0), datetime.datetime(2008, 9, 18, 0, 0), datetime.datetime(2009, 4, 21, 0, 0)]"
-50,113003.SH,[]
-51,113006.SH,[]
-52,113007.SH,[]
-53,113008.SH,"[datetime.datetime(2019, 8, 8, 0, 0)]"
-54,113501.SH,[]
-55,125002.SZ,"[datetime.datetime(2003, 5, 23, 0, 0)]"
-56,125069.SZ,[]
-57,125089.SZ,[]
-58,125488.SZ,"[datetime.datetime(2006, 9, 21, 0, 0)]"
-59,125528.SZ,"[datetime.datetime(2008, 11, 26, 0, 0), datetime.datetime(2009, 6, 3, 0, 0)]"
-60,125572.SZ,"[datetime.datetime(2008, 8, 25, 0, 0), datetime.datetime(2008, 11, 7, 0, 0)]"
-61,125630.SZ,"[datetime.datetime(2004, 7, 7, 0, 0), datetime.datetime(2004, 10, 15, 0, 0), datetime.datetime(2005, 5, 23, 0, 0)]"
-62,125717.SZ,[]
-63,125729.SZ,"[datetime.datetime(2005, 4, 13, 0, 0)]"
-64,125731.SZ,[]
-65,125822.SZ,"[datetime.datetime(2005, 5, 30, 0, 0), datetime.datetime(2006, 6, 26, 0, 0), datetime.datetime(2007, 5, 15, 0, 0)]"
-66,125887.SZ,"[datetime.datetime(2011, 5, 13, 0, 0), datetime.datetime(2011, 10, 17, 0, 0), datetime.datetime(2013, 6, 28, 0, 0), datetime.datetime(2014, 7, 3, 0, 0)]"
-67,125898.SZ,[]
-68,125930.SZ,"[datetime.datetime(2004, 11, 19, 0, 0), datetime.datetime(2005, 7, 18, 0, 0), datetime.datetime(2005, 8, 3, 0, 0), datetime.datetime(2005, 12, 7, 0, 0)]"
-69,125932.SZ,"[datetime.datetime(2005, 5, 19, 0, 0), datetime.datetime(2005, 7, 29, 0, 0), datetime.datetime(2006, 6, 23, 0, 0)]"
-70,125936.SZ,[]
-71,125937.SZ,[]
-72,125959.SZ,[]
-73,125960.SZ,"[datetime.datetime(2009, 6, 23, 0, 0), datetime.datetime(2010, 1, 27, 0, 0), datetime.datetime(2010, 5, 26, 0, 0)]"
-74,125969.SZ,"[datetime.datetime(2010, 4, 28, 0, 0)]"
-75,126002.SZ,"[datetime.datetime(2005, 6, 29, 0, 0)]"
-76,126301.SZ,[]
-77,126630.SZ,[]
-78,127001.SZ,[]
-79,127002.SZ,[]
-80,128001.SZ,[]
-81,128002.SZ,[]
-82,128003.SZ,[]
-83,128005.SZ,[]
-84,128006.SZ,[]
-85,128007.SZ,[]
-86,128008.SZ,[]
-87,128031.SZ,"[datetime.datetime(2009, 6, 12, 0, 0)]"
-88,128233.SZ,[]
-89,129031.SZ,[]
-90,110032.SH,[]
-91,110800.SH,"[datetime.datetime(2021, 5, 20, 0, 0)]"
-92,113012.SH,"[datetime.datetime(2021, 7, 12, 0, 0)]"
-93,113014.SH,[]
-94,113015.SH,[]
-95,113019.SH,[]
-96,113510.SH,[]
-97,113514.SH,[]
-98,123001.SZ,[]
-99,128011.SZ,[]
-100,128016.SZ,[]
-101,110033.SH,"[datetime.datetime(2020, 7, 3, 0, 0), datetime.datetime(2021, 1, 21, 0, 0), datetime.datetime(2021, 7, 5, 0, 0)]"
-102,110034.SH,"[datetime.datetime(2021, 6, 17, 0, 0)]"
-103,110038.SH,"[datetime.datetime(2021, 5, 26, 0, 0)]"
-104,123014.SZ,[]
-105,124017.SZ,[]
-106,127003.SZ,"[datetime.datetime(2020, 7, 17, 0, 0), datetime.datetime(2021, 7, 21, 0, 0)]"
-107,127004.SZ,"[datetime.datetime(2021, 7, 15, 0, 0)]"
-108,128013.SZ,"[datetime.datetime(2021, 2, 24, 0, 0)]"
-109,128014.SZ,"[datetime.datetime(2021, 6, 2, 0, 0)]"
-110,128017.SZ,[]
-111,128029.SZ,"[datetime.datetime(2021, 7, 8, 0, 0)]"
+0,100236.SH,"[datetime.datetime(2005, 6, 22, 0, 0), datetime.datetime(2006, 6, 6, 0, 0), datetime.datetime(2007, 6, 19, 0, 0), datetime.datetime(2008, 6, 20, 0, 0)]"
+1,100567.SH,"[datetime.datetime(2004, 4, 19, 0, 0), datetime.datetime(2004, 7, 26, 0, 0), datetime.datetime(2004, 12, 8, 0, 0), datetime.datetime(2005, 1, 6, 0, 0), datetime.datetime(2005, 4, 4, 0, 0), datetime.datetime(2005, 5, 25, 0, 0), datetime.datetime(2005, 7, 27, 0, 0), datetime.datetime(2006, 4, 20, 0, 0)]"
+2,100795.SH,"[datetime.datetime(2004, 4, 8, 0, 0)]"
+3,110004.SH,"[datetime.datetime(2010, 7, 21, 0, 0)]"
+4,110005.SH,[]
+5,110006.SH,[]
+6,110008.SH,"[datetime.datetime(2010, 8, 12, 0, 0)]"
+7,110020.SH,[]
+8,110025.SH,[]
+9,110026.SH,[]
+10,110027.SH,[]
+11,110028.SH,[]
+12,110029.SH,[]
+13,110078.SH,"[datetime.datetime(2008, 6, 18, 0, 0), datetime.datetime(2009, 6, 4, 0, 0), datetime.datetime(2010, 7, 19, 0, 0), datetime.datetime(2011, 6, 16, 0, 0)]"
+14,110227.SH,"[datetime.datetime(2008, 5, 13, 0, 0), datetime.datetime(2008, 10, 21, 0, 0), datetime.datetime(2009, 4, 13, 0, 0)]"
+15,110232.SH,"[datetime.datetime(2007, 7, 11, 0, 0), datetime.datetime(2008, 8, 8, 0, 0), datetime.datetime(2008, 10, 15, 0, 0)]"
+16,110398.SH,[]
+17,110423.SH,[]
+18,110567.SH,[]
+19,110598.SH,"[datetime.datetime(2008, 9, 26, 0, 0), datetime.datetime(2009, 6, 12, 0, 0)]"
+20,110874.SH,"[datetime.datetime(2005, 7, 28, 0, 0), datetime.datetime(2005, 8, 1, 0, 0), datetime.datetime(2006, 1, 9, 0, 0), datetime.datetime(2006, 5, 24, 0, 0), datetime.datetime(2006, 7, 31, 0, 0), datetime.datetime(2007, 7, 2, 0, 0)]"
+21,110971.SH,"[datetime.datetime(2008, 7, 14, 0, 0), datetime.datetime(2008, 9, 18, 0, 0), datetime.datetime(2009, 4, 21, 0, 0)]"
+22,113006.SH,[]
+23,113007.SH,[]
+24,113501.SH,[]
+25,125002.SZ,"[datetime.datetime(2003, 5, 23, 0, 0)]"
+26,125528.SZ,"[datetime.datetime(2008, 11, 26, 0, 0), datetime.datetime(2009, 6, 3, 0, 0)]"
+27,125717.SZ,[]
+28,125932.SZ,"[datetime.datetime(2005, 5, 19, 0, 0), datetime.datetime(2005, 7, 29, 0, 0), datetime.datetime(2006, 6, 23, 0, 0)]"
+29,125969.SZ,"[datetime.datetime(2010, 4, 28, 0, 0)]"
+30,126630.SZ,[]
+31,127002.SZ,[]
+32,128002.SZ,[]
+33,128003.SZ,[]
+34,128004.SZ,[]
+35,128005.SZ,[]
+36,128006.SZ,[]
+37,128008.SZ,[]
+38,128009.SZ,[]

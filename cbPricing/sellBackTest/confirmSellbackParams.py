@@ -125,9 +125,6 @@ def getDaysWithLowerPriceAboveLimit(priceList):
 
 """
 check在回售期内,公司股票在任意连续X个交易日中的收盘价低于转股价格的Z%时
-T T T T T T T T T T T T T T T T
-L
-          R 
 
 """
 def checkConsecutives(resultList, daysLimit, daysList, code):
