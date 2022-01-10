@@ -19,7 +19,7 @@ resultList = []
 for i in range(0, 1):
 
     """可转债代码"""
-    CONVERTIBLE_BOND_CODE = "110031.SH"
+    CONVERTIBLE_BOND_CODE = "113555.SH"
     """债券面值"""
     FACE_VALUE = 100
     """可转债起息日"""
@@ -57,7 +57,7 @@ for i in range(0, 1):
     print("无风险利率：" + str(RISK_FREE_RATE))
     print("无风险利率的年数：" + str(leftYearsToMaturity))
 
-    """根据债券评级获取相应的中债收益率作为折现率（定价日当天的中债企业债收益率）"""
+    """根据债券评级获取相应的中债收益率作为折现率（定价日前一日的中债企业债收益率）"""
     corporateBondYieldObj = ChinaBondCorporateBondYieldData()
     listOfDates = w.tdays(PRICING_DATE, END_DATE, "").Data[0]
     allDiscountRates = corporateBondYieldObj.getEachDayDiscountRate(listOfDates, PRICING_DATE_str, creditRating)
