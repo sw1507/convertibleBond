@@ -290,7 +290,7 @@ for key, value in data.items():
 
 
 
-oneStockData = originalData["110874.SH"]
+oneStockData = originalData["125932.SZ"]
 dates = oneStockData["日期"]
 closingPrice = oneStockData["收盘价"]
 convertPrice = oneStockData["转股价"]
@@ -299,4 +299,4 @@ df_test = pd.DataFrame(dataMap)
 #at home
 # df_test.to_csv(r'C:/Users/Su Wang/Desktop/首创/test128029.csv')
 #at office
-df_test.to_csv(r'D:/个人专题/test110874.csv')
+df_test.to_csv(r'D:/个人专题/test125932.csv')
